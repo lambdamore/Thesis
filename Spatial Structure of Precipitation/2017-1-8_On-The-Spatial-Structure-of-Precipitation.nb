@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1119546,      18503]
-NotebookOptionsPosition[   1116847,      18410]
-NotebookOutlinePosition[   1117609,      18438]
-CellTagsIndexPosition[   1117527,      18433]
+NotebookDataLength[   1120933,      18534]
+NotebookOptionsPosition[   1118069,      18437]
+NotebookOutlinePosition[   1118832,      18465]
+CellTagsIndexPosition[   1118750,      18460]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -123,9 +123,10 @@ Cell["On the Spatial Structure of Precipitation", "Title",
  CellChangeTimes->{
   3.559948400406288*^9, {3.692988935807694*^9, 3.692988951109045*^9}}],
 
-Cell["Case Study in West Coast United States", "Subtitle",
+Cell["Case Study in Major Climate Divisions", "Subtitle",
  CellChangeTimes->{{3.6929891029874277`*^9, 3.692989109991613*^9}, {
-  3.692992413628413*^9, 3.692992432762698*^9}}],
+  3.692992413628413*^9, 3.692992432762698*^9}, {3.692994680720708*^9, 
+  3.692994689083556*^9}}],
 
 Cell["\<\
 Baoxiang Pan
@@ -171,20 +172,43 @@ global models and almost all regional models use finite difference methods \
 for all three spatial dimensions, while other global models and a few \
 regional models use spectral methods for the horizontal dimensions and \
 finite-difference methods in the vertical.[wiki]\[CloseCurlyDoubleQuote] \
-(which is using FDM(\[RightArrow]?) and which is using \
-SM?(\[RightArrow]ECMWF))\
+(which is using FDM(\[RightArrow]UCLA Model) and which is using SM?(\
+\[RightArrow]ECMWF))\
 \>", "Text",
  CellChangeTimes->{{3.6929934579973173`*^9, 3.6929937964273233`*^9}, {
   3.692993934030518*^9, 3.692993999408512*^9}, {3.6929940574974413`*^9, 
-  3.692994075038357*^9}, {3.692994392104629*^9, 3.692994416198346*^9}}],
+  3.692994075038357*^9}, {3.692994392104629*^9, 3.692994416198346*^9}, {
+  3.692994622915077*^9, 3.6929946267456303`*^9}}],
+
+Cell["\<\
+\[OpenCurlyDoubleQuote]This problem may be partially addressed using new
+tools such as global cloud-resolving models (GCRM)
+and multimodel frameworks (MMF) that offer potential
+for more explicit representation of cloud and precipitation
+processes on global scales\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.692996818222004*^9, 3.6929968194343853`*^9}}],
+
+Cell["\[OpenCurlyDoubleQuote]fractal nature of precipitation events\
+\[CloseCurlyDoubleQuote]", "Text",
+ CellChangeTimes->{{3.692996868449892*^9, 3.6929968702320127`*^9}}],
+
+Cell["\<\
+Precipitation falling on earth follows certain spatial distributions, which \
+dramatically influences human activities and ecological patterns. The \
+\>", "Text",
+ CellChangeTimes->{{3.692994833442346*^9, 3.692994931349424*^9}, 
+   3.6929949620154953`*^9, {3.69299506227761*^9, 3.692995108511572*^9}, {
+   3.692995164644991*^9, 3.692995165329668*^9}, {3.692995238502931*^9, 
+   3.6929952873935432`*^9}, {3.692997415175988*^9, 3.692997424199737*^9}}],
 
 Cell["\<\
 The spatial distribution of precipitation (MECHANICAL EXPLANATION OF RAINFALL \
-GENERATION). \
+GENERATION).  \
 \>", "Text",
  CellChangeTimes->{{3.692993080434517*^9, 3.692993090193096*^9}, {
-  3.692993246533798*^9, 3.6929932493490057`*^9}, {3.6929942363253307`*^9, 
-  3.6929942584798393`*^9}}],
+   3.692993246533798*^9, 3.6929932493490057`*^9}, {3.6929942363253307`*^9, 
+   3.6929942584798393`*^9}, 3.69299478475072*^9}],
 
 Cell[CellGroupData[{
 
@@ -18405,7 +18429,10 @@ tLFu9DsLrdFYaoZ6ni+Bvsb/AfID2Ok=
  CellChangeTimes->{{3.6929925061052237`*^9, 3.69299251711861*^9}}]
 }, {2}]]
 }, Open  ]]
-}, Open  ]]
+}, Open  ]],
+
+Cell[" terrain", "Section",
+ CellChangeTimes->{3.692997141957487*^9}]
 }, Open  ]]
 },
 WindowSize->{Full, Full},
@@ -18424,15 +18451,15 @@ CellTagsIndex->{
  "SlideShowHeader"->{
   Cell[580, 22, 4341, 97, 75, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[5425, 139, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[5473, 140, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"],
-  Cell[9782, 248, 64, 1, 74, "SlideShowNavigationBar",
+  Cell[10932, 272, 64, 1, 74, "SlideShowNavigationBar",
    CellTags->"SlideShowHeader"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"SlideShowHeader", 1117238, 18423}
+ {"SlideShowHeader", 1118460, 18450}
  }
 *)
 (*NotebookFileOutline
@@ -18441,69 +18468,73 @@ Cell[CellGroupData[{
 Cell[580, 22, 4341, 97, 75, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[4924, 121, 149, 2, 310, "Title"],
-Cell[5076, 125, 175, 2, 115, "Subtitle"],
-Cell[5254, 129, 134, 5, 93, "Text"]
+Cell[5076, 125, 223, 3, 115, "Subtitle"],
+Cell[5302, 130, 134, 5, 93, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5425, 139, 64, 1, 74, "SlideShowNavigationBar",
+Cell[5473, 140, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[5514, 144, 102, 1, 123, "Section"],
+Cell[5562, 145, 102, 1, 123, "Section"],
 Cell[CellGroupData[{
-Cell[5641, 149, 182, 2, 74, "Subsubsection"],
-Cell[5826, 153, 1670, 25, 549, "Text"],
-Cell[7499, 180, 287, 6, 93, "Text"],
+Cell[5689, 150, 182, 2, 74, "Subsubsection"],
+Cell[5874, 154, 1730, 26, 549, "Text"],
+Cell[7607, 182, 379, 7, 207, "Text"],
+Cell[7989, 191, 171, 2, 55, "Text"],
+Cell[8163, 195, 459, 7, 93, "Text"],
+Cell[8625, 204, 311, 6, 93, "Text"],
 Cell[CellGroupData[{
-Cell[7811, 190, 261, 3, 53, "Item"],
-Cell[8075, 195, 239, 3, 53, "Item"],
-Cell[8317, 200, 160, 2, 53, "Item"]
+Cell[8961, 214, 261, 3, 53, "Item"],
+Cell[9225, 219, 239, 3, 53, "Item"],
+Cell[9467, 224, 160, 2, 53, "Item"]
 }, Open  ]],
-Cell[8492, 205, 103, 1, 55, "Text"],
-Cell[8598, 208, 206, 4, 55, "Text"],
-Cell[8807, 214, 201, 4, 55, "Text"]
+Cell[9642, 229, 103, 1, 55, "Text"],
+Cell[9748, 232, 206, 4, 55, "Text"],
+Cell[9957, 238, 201, 4, 55, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9045, 223, 157, 2, 74, "Subsubsection"],
+Cell[10195, 247, 157, 2, 74, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[9227, 229, 98, 1, 53, "Item"],
-Cell[9328, 232, 160, 2, 53, "Item"]
+Cell[10377, 253, 98, 1, 53, "Item"],
+Cell[10478, 256, 160, 2, 53, "Item"]
 }, Open  ]]
 }, Open  ]],
-Cell[9515, 238, 103, 1, 74, "Subsubsection"],
-Cell[9621, 241, 112, 1, 53, "Subsubsection"]
+Cell[10665, 262, 103, 1, 74, "Subsubsection"],
+Cell[10771, 265, 112, 1, 53, "Subsubsection"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9782, 248, 64, 1, 74, "SlideShowNavigationBar",
+Cell[10932, 272, 64, 1, 74, "SlideShowNavigationBar",
  CellTags->"SlideShowHeader"],
 Cell[CellGroupData[{
-Cell[9871, 253, 145, 2, 123, "Section"],
+Cell[11021, 277, 145, 2, 123, "Section"],
 Cell[CellGroupData[{
-Cell[10041, 259, 1521, 29, 358, "Code"],
-Cell[11565, 290, 7874, 178, 419, "Output"]
+Cell[11191, 283, 1521, 29, 358, "Code"],
+Cell[12715, 314, 7874, 178, 419, "Output"]
 }, Open  ]],
-Cell[19454, 471, 169, 4, 131, "Text"],
+Cell[20604, 495, 169, 4, 131, "Text"],
 Cell[CellGroupData[{
-Cell[19648, 479, 115, 1, 94, "Subsection"],
-Cell[19766, 482, 307, 5, 131, "Text"],
+Cell[20798, 503, 115, 1, 94, "Subsection"],
+Cell[20916, 506, 307, 5, 131, "Text"],
 Cell[CellGroupData[{
-Cell[20098, 491, 52, 0, 74, "Subsubsection"],
+Cell[21248, 515, 52, 0, 74, "Subsubsection"],
 Cell[CellGroupData[{
-Cell[20175, 495, 406, 12, 46, "Input"],
-Cell[20584, 509, 68560, 1018, 239, "Output"]
+Cell[21325, 519, 406, 12, 46, "Input"],
+Cell[21734, 533, 68560, 1018, 239, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[89205, 1534, 118, 1, 94, "Subsection"],
-Cell[89326, 1537, 60150, 993, 186, "SideCaptionArray"],
-Cell[149479, 2532, 96, 1, 55, "Text"],
+Cell[90355, 1558, 118, 1, 94, "Subsection"],
+Cell[90476, 1561, 60150, 993, 186, "SideCaptionArray"],
+Cell[150629, 2556, 96, 1, 55, "Text"],
 Cell[CellGroupData[{
-Cell[149600, 2537, 797234, 13075, 148, "Code"],
-Cell[946837, 15614, 169961, 2790, 250, "Output"]
+Cell[150750, 2561, 797234, 13075, 148, "Code"],
+Cell[947987, 15638, 169961, 2790, 250, "Output"]
 }, {2}]]
 }, Open  ]]
-}, Open  ]]
+}, Open  ]],
+Cell[1117984, 18433, 69, 1, 123, "Section"]
 }, Open  ]]
 }
 ]
